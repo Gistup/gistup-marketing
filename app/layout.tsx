@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gistup",
-  description: "Gistup Marketing Website",
+  title: "GistUp",
+  description: "GistUp Marketing Website",
 };
 
 export default function RootLayout({
@@ -15,9 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <div className="container mx-auto px-4 py-8 max-w-content">
+            {children}
+          </div>
+        </main>
         <Footer />
       </body>
     </html>
