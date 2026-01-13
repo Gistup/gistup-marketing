@@ -3,7 +3,7 @@ export default function Home() {
     <div className="container mx-auto px-4 py-12">
       <div className="flex flex-col items-center justify-center min-h-[60vh] text-center">
         <h1 className="text-6xl font-bold mb-4">Hello World</h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-text-secondary">
           Gistup Marketing - Ready for deployment
         </p>
       </div>
