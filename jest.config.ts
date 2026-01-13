@@ -16,7 +16,11 @@ const config: Config = {
   testMatch: ["**/__tests__/**/*.test.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
   collectCoverageFrom: [
     "components/**/*.{ts,tsx}",
+    "content/**/*.{ts,tsx}",
     "!components/index.ts",
+    "!components/ui/index.ts",
+    "!components/landing/index.ts",
+    "!content/index.ts",
     "!**/*.d.ts",
   ],
   coverageThreshold: {
