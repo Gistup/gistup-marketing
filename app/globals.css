@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Reset and base styles */
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-text-primary bg-background-main;
+  }
+
+  /* Focus visible styles for better accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+  }
+
+  /* Remove default focus outline and use custom */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+@layer components {
+  /* Container utility */
+  .container {
+    @apply w-full mx-auto px-4;
+  }
+
+  /* Button base styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-button font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-text-inverse hover:bg-primary-hover;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-border text-text-primary hover:bg-background-secondary;
+  }
+}
+
+@layer utilities {
+  /* Screen reader only utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  .no-horizontal-scroll {
+    overflow-x: hidden;
+  }
+}
