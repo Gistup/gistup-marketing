@@ -65,3 +65,15 @@ export type {
   PrivacySectionProps,
   PrivacySectionListProps,
 } from "./privacy";
+
+// Terms Components
+export {
+  TermsHero,
+  TermsSection,
+  TermsSectionList,
+} from "./terms";
+export type {
+  TermsHeroProps,
+  TermsSectionProps,
+  TermsSectionListProps,
+} from "./terms";
