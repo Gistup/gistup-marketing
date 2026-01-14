@@ -11,3 +11,15 @@ export type {
   FormStatus,
   UseContactFormReturn,
 } from "./useContactForm";
+
+export {
+  useWaitlistForm,
+  validateWaitlistField,
+  validateWaitlistForm,
+} from "./useWaitlistForm";
+export type {
+  WaitlistFormValues,
+  WaitlistFormErrors,
+  WaitlistFormStatus,
+  UseWaitlistFormReturn,
+} from "./useWaitlistForm";

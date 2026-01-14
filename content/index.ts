@@ -62,3 +62,12 @@ export type {
   TermsHeroContent,
   TermsSection,
 } from "./terms";
+
+export { waitlistContent } from "./waitlist";
+export type {
+  WaitlistPageContent,
+  WaitlistHeroContent,
+  WaitlistFormContent,
+  WaitlistFormField,
+  WaitlistFormFeedback,
+} from "./waitlist";
