@@ -40,3 +40,11 @@ export type {
   FAQCategory,
   FAQContactCTAContent,
 } from "./faq";
+
+export { contactContent } from "./contact";
+export type {
+  ContactPageContent,
+  ContactHeroContent,
+  ContactFormContent,
+  ContactFormField,
+} from "./contact";

@@ -49,3 +49,7 @@ export type {
   FAQAccordionProps,
   FAQContactCTAProps,
 } from "./faq";
+
+// Contact Components
+export { ContactForm } from "./contact";
+export type { ContactFormProps } from "./contact";
