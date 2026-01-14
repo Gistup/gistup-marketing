@@ -77,3 +77,7 @@ export type {
   TermsSectionProps,
   TermsSectionListProps,
 } from "./terms";
+
+// Waitlist Components
+export { WaitlistForm, WaitlistHero } from "./waitlist";
+export type { WaitlistFormProps, WaitlistHeroProps } from "./waitlist";
