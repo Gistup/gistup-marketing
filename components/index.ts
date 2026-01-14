@@ -53,3 +53,15 @@ export type {
 // Contact Components
 export { ContactForm } from "./contact";
 export type { ContactFormProps } from "./contact";
+
+// Privacy Components
+export {
+  PrivacyHero,
+  PrivacySection,
+  PrivacySectionList,
+} from "./privacy";
+export type {
+  PrivacyHeroProps,
+  PrivacySectionProps,
+  PrivacySectionListProps,
+} from "./privacy";
