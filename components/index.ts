@@ -23,3 +23,17 @@ export type {
   GridColumns,
   GridGap,
 } from "./ui";
+
+// Pricing Components
+export {
+  PricingToggle,
+  PricingCard,
+  FeatureComparisonTable,
+  PricingBottomCTA,
+} from "./pricing";
+export type {
+  PricingToggleProps,
+  PricingCardProps,
+  FeatureComparisonTableProps,
+  PricingBottomCTAProps,
+} from "./pricing";
