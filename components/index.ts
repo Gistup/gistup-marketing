@@ -37,3 +37,15 @@ export type {
   FeatureComparisonTableProps,
   PricingBottomCTAProps,
 } from "./pricing";
+
+// FAQ Components
+export {
+  FAQAccordionItem,
+  FAQAccordion,
+  FAQContactCTA,
+} from "./faq";
+export type {
+  FAQAccordionItemProps,
+  FAQAccordionProps,
+  FAQContactCTAProps,
+} from "./faq";

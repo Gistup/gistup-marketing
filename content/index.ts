@@ -31,3 +31,12 @@ export type {
   BillingPeriod,
   CTAConfig,
 } from "./pricing";
+
+export { faqContent } from "./faq";
+export type {
+  FAQPageContent,
+  FAQHeroContent,
+  FAQItem,
+  FAQCategory,
+  FAQContactCTAContent,
+} from "./faq";
