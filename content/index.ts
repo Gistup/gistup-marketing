@@ -55,3 +55,10 @@ export type {
   PrivacyHeroContent,
   PrivacySection,
 } from "./privacy";
+
+export { termsContent } from "./terms";
+export type {
+  TermsPageContent,
+  TermsHeroContent,
+  TermsSection,
+} from "./terms";
