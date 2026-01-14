@@ -18,3 +18,16 @@ export type {
   Feature,
   BottomCTAContent,
 } from "./landing";
+
+export { pricingContent } from "./pricing";
+export type {
+  PricingPageContent,
+  PricingHeroContent,
+  PricingTier,
+  PricingFeature,
+  FeatureComparisonContent,
+  ComparisonFeature,
+  PricingBottomCTAContent,
+  BillingPeriod,
+  CTAConfig,
+} from "./pricing";
