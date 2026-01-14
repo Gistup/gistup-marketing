@@ -48,3 +48,10 @@ export type {
   ContactFormContent,
   ContactFormField,
 } from "./contact";
+
+export { privacyContent } from "./privacy";
+export type {
+  PrivacyPageContent,
+  PrivacyHeroContent,
+  PrivacySection,
+} from "./privacy";
