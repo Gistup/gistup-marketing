@@ -26,6 +26,21 @@ export interface ContactHeroContent {
 }
 
 /**
+ * Form feedback messages
+ */
+export interface ContactFormFeedback {
+  submitting: string;
+  success: {
+    title: string;
+    message: string;
+  };
+  error: {
+    title: string;
+    defaultMessage: string;
+  };
+}
+
+/**
  * Contact form content
  */
 export interface ContactFormContent {
@@ -33,7 +48,9 @@ export interface ContactFormContent {
   helperText: string;
   submitButton: {
     label: string;
+    submittingLabel: string;
   };
+  feedback: ContactFormFeedback;
 }
 
 /**
@@ -80,6 +97,18 @@ export const contactContent: ContactPageContent = {
     helperText: "We typically respond within 24-48 hours.",
     submitButton: {
       label: "Send Message",
+      submittingLabel: "Sending...",
+    },
+    feedback: {
+      submitting: "Sending your message...",
+      success: {
+        title: "Message Sent!",
+        message: "Thank you for reaching out. We'll get back to you within 24-48 hours.",
+      },
+      error: {
+        title: "Something went wrong",
+        defaultMessage: "We couldn't send your message. Please try again or email us directly.",
+      },
     },
   },
 };

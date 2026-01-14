@@ -2,6 +2,7 @@ import {
   contactContent,
   type ContactPageContent,
   type ContactFormField,
+  type ContactFormFeedback,
 } from "../contact";
 
 describe("Contact Content", () => {
@@ -95,6 +96,38 @@ describe("Contact Content", () => {
   describe("Submit Button", () => {
     it("has submit button label", () => {
       expect(contactContent.form.submitButton.label).toBe("Send Message");
+    });
+
+    it("has submitting label", () => {
+      expect(contactContent.form.submitButton.submittingLabel).toBe("Sending...");
+    });
+  });
+
+  describe("Feedback Messages", () => {
+    it("has feedback configuration", () => {
+      expect(contactContent.form.feedback).toBeDefined();
+    });
+
+    it("has submitting message", () => {
+      expect(contactContent.form.feedback.submitting).toBeDefined();
+      expect(typeof contactContent.form.feedback.submitting).toBe("string");
+    });
+
+    it("has success feedback", () => {
+      expect(contactContent.form.feedback.success).toBeDefined();
+      expect(contactContent.form.feedback.success.title).toBeDefined();
+      expect(contactContent.form.feedback.success.message).toBeDefined();
+    });
+
+    it("has error feedback", () => {
+      expect(contactContent.form.feedback.error).toBeDefined();
+      expect(contactContent.form.feedback.error.title).toBeDefined();
+      expect(contactContent.form.feedback.error.defaultMessage).toBeDefined();
+    });
+
+    it("feedback matches ContactFormFeedback type", () => {
+      const feedback: ContactFormFeedback = contactContent.form.feedback;
+      expect(feedback).toBeDefined();
     });
   });
 
