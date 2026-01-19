@@ -13,6 +13,7 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@getbrevo/brevo": "^3.0.1",
     "next": "^15.5.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
